@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Asset Value Converter</h1>
+    
+    <div class="conversion-section">
+        <label for="currency">Select Currency:</label>
+        <select id="currency" onchange="convertCurrency()">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+
+        <div class="asset-value">
+            <p>Asset Value: <span id="assetValue">1000</span> USD</p>
+            <p>Converted Value: <span id="convertedValue">1000</span></p>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
